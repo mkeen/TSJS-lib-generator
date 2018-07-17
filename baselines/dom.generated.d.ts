@@ -11750,7 +11750,7 @@ interface ReadableStream {
 
 declare var ReadableStream: {
     prototype: ReadableStream;
-    new(): ReadableStream;
+    new(underlyingSink?: UnderlyingSink, queueingStrategy?: QueuingStrategy): ReadableStream;
 };
 
 interface ReadableStreamReader {
